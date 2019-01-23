@@ -1,33 +1,66 @@
 body,html {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    position: absolute;
+    width: 650px;
     height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto; 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background: #ddd;
 }
 
-.chat-container {
-    margin: 0px;
-    padding: px;
+.chatbot .chat-container {
+    position: relative;
+    padding-top: 10px;
+    width: 75%;
+    left: 12.5%;
+    height: 100%;
+    max-height: 82vh;
+    overflow: auto;
 }
 
-.chat-message {
-  padding: 6px;
-  border-radius: 3px;
-  margin-bottom: 3px;
-}
+input {
+    position: absolute; 
+    height: 50px;
+    width: 75%;
+    left: 12.5%;
+    bottom: 25px;
+    padding-left: 15px;
+    border: none;
+    border-radius: 50px;
+    outline: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+} 
 
 .bot-message {
-    background: green;
-    color: white;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    background: #333;
+    color: white; 
+    width: max-content;
+    float: right;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .human-message {
-    background:dodgerblue;
+    padding: 10px;
+    margin: 15px 2px;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    background: #666;
     color: white;
     margin: 13px 1px;
-}
-
-.input {
-  width: 100%;
-  margin: 35px 0px;
-  height: 60px;
-  border: 1px solid rosybrown;
-  border-radius: 3px;
+    width: max-content; 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
