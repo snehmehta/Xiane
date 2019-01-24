@@ -13,7 +13,7 @@ body,html {
     bottom: 0;
     margin: auto; 
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    background: #ddd;
+    background: #ffd300;
 }
 
 .chatbot .chat-container {
@@ -29,7 +29,7 @@ body,html {
 input {
     position: absolute; 
     height: 50px;
-    width: 75%;
+    width: 60%;
     left: 12.5%;
     bottom: 25px;
     padding-left: 15px;
@@ -48,19 +48,41 @@ input {
     background: #333;
     color: white; 
     width: max-content;
-    float: right;
+    float: right; 
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .human-message {
     padding: 10px;
-    margin: 15px 2px;
+    border-bottom-left-radius: 50px;
     border-top-right-radius: 50px;
-    border-top-left-radius: 50px;
     border-bottom-right-radius: 50px;
-    background: #666;
-    color: white;
+    background: #fff;
+    color: #333;
+    word-wrap: break-word;
+    clear: both;
     margin: 13px 1px;
     width: max-content; 
+    max-width: 350px;
+    overflow: hidden;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+button {
+    border: none;
+    background: none;
+    outline: none;
+    position: absolute;
+    bottom: 25px;
+    left: 80%;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
 }
