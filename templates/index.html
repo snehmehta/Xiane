@@ -17,12 +17,14 @@
             <form id="target">
                <input class="input" type="text" value="" placeholder="Enter message..." id="input_message"/>
                <input type="submit" hidden>
-               <button><i class="fas fa-microphone fa-2x"></i></button>
+               <button onclick='speak()'><i class="fas fa-microphone fa-2x"></i></button>
             </form>
         </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!-- <script src="{{ url_for('static', filename='custom.js')}}"></script> -->
     <script src="{{ url_for('static',filename='main.js') }}"></script>
+    <script src="{{ url_for('static',filename='speech.js') }}"></script>
+
   </body>
 </html>
