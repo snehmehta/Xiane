@@ -11,6 +11,13 @@ function submit_message(message) {
                 ${data.message}
             </div>
       `)
+      /*
+      $('.chatbot-img').append(`
+            <div  class="bot-img">
+                <img src="static/img/bot.gif" /> 
+            </div>
+      `)*/
+      //$('<img class="bot-img" src="static/img/bot.gif" />').prependTo('.bot-message');
       // remove the loading indicator
       $( "#loading" ).remove();
     }
