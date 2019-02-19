@@ -6,7 +6,7 @@ function submit_message(message) {
     
     function handle_response(data) {
       // append the bot repsonse to the div
-      if(data.display == 'card'){
+        if(data.display == 'card'){
           $('.chat-container').append(`
             <div class="card chat-message bot-message" style="width: 18rem;">
             <img class="card-img-top" width="200px" height="200px" src="${data.assets}" alt="Card image cap">
@@ -25,16 +25,19 @@ function submit_message(message) {
           `)
           // remove the loading indicator
           $( "#loading" ).remove();
-      }
-      else if(data.display == 'iframe'){
+       }
+       else if(data.display == 'iframe'){
         $('.chat-container').append(`
             <div class="chat-message bot-message">
+<<<<<<< HEAD
               <iframe scrolling="no" src="${data.message}" frameborder="0" style="width: 400px; height: 333px;"></iframe>
+=======
+              <iframe scrolling="no" src="${data.message}" frameborder="0" style="width: 350px; height: 333px; z-index : 2;"></iframe>
+>>>>>>> b008c446193d65749ce075bacb44e361359da5b6
             </div>
-         `)
-        // remove the loading indicator
-        $( "#loading" ).remove();
-      }
+      `)
+      $( "#loading" ).remove();
+    }
     }
 }
 
@@ -76,4 +79,4 @@ var config = {childList: true};
 observer.observe(someElement, config);
 function scrollToBottom() {
     someElement.scrollTop = someElement.scrollHeight;
-  }
+}
