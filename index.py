@@ -1,12 +1,22 @@
-from flask import Flask, request, jsonify, render_template
+from flask import Flask, request, jsonify, render_template,url_for
 import os
 import requests
 import json
 from wit import Wit
+import json
 
 access_token = "DXRQXBGEAYGVY5PKLUELZW4BFQWWPWXW"
 
 app = Flask(__name__)
+
+with open("everything.txt",'r') as f:
+    everything_text = f.read()
+
+with open("computer.txt",'r') as f:
+    computer_text = f.read()
+
+with open("c_quiz.txt",'r') as f:
+    c_quiz = f.read()
 
 def first_entity_value(entities, entity):
     if entity not in entities:
@@ -17,15 +27,27 @@ def first_entity_value(entities, entity):
     return val
 
 def handle_message(response):
+    
     entities = response['entities']
     greeting = first_entity_value(entities,'intent')
     creator = first_entity_value(entities,'personality')
+    everything = first_entity_value(entities,'fest_question')
+    computer = first_entity_value(entities,'computer')
+
     if creator:
-        return ("Sneh Mehta")
+        return ("Created by Sneh Mehta and Beautify by Nimit Patel",'text')
     elif greeting:
-        return ("Hi, how can I help you")
+        return ("Hi, how can I help you",'text')
+    elif everything:
+        return (everything_text,'text')
+    elif computer:
+        if computer == 'general':
+            return (computer_text,'text')
+        else:
+            return ('E:\\Tech\\speech_t\\templates\\c_quiz.html','iframe')
+
     else:
-        return ("Sorry I don't understand can you be more specific")
+        return ("I am under Construction",'text')
 
 
 @app.route('/')
@@ -39,8 +61,11 @@ def get_message():
         client = Wit(access_token)
         resp = client.message(message)
         answer = handle_message(resp)
+        # print(answer,type(answer))
+        # print(answer[0])
         reply = {
-            "message": answer
+            "message": answer[0],
+            "display" : answer[1]
         }
 
         return jsonify(reply)
