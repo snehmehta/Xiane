@@ -44,7 +44,7 @@ def handle_message(response):
         if computer == 'general':
             return (computer_text,'text')
         else:
-            return url_for('static',filename='c_quiz.html')
+            return ('c_quiz','iframe')
 
     else:
         return ("I am under Construction",'text')
@@ -69,6 +69,10 @@ def get_message():
         }
 
         return jsonify(reply)
+
+@app.route('/c_quiz')
+def c_quiz():
+    return render_template('c_quiz.html') 
 
 # run Flask app
 if __name__ == "__main__":

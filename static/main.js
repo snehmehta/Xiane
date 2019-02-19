@@ -29,11 +29,7 @@ function submit_message(message) {
        else if(data.display == 'iframe'){
         $('.chat-container').append(`
             <div class="chat-message bot-message">
-<<<<<<< HEAD
               <iframe scrolling="no" src="${data.message}" frameborder="0" style="width: 400px; height: 333px;"></iframe>
-=======
-              <iframe scrolling="no" src="${data.message}" frameborder="0" style="width: 350px; height: 333px; z-index : 2;"></iframe>
->>>>>>> b008c446193d65749ce075bacb44e361359da5b6
             </div>
       `)
       $( "#loading" ).remove();
