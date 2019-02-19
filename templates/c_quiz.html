@@ -8,7 +8,13 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <style>
     body, html {
-        background: yellow;
+        background: transparent;
+    }
+    .carousel-control-prev {
+        margin-left: -15px;
+    }
+    .carousel-control-next {
+        margin-right: -15px;
     }
 </style>
 </head>
@@ -17,7 +23,7 @@
     <div class="carousel-inner">
         <div class="carousel-item active">
             <div class="card mx-auto" style="width: 18rem;">
-                <img class="card-img-top" src="../1.jpg" alt="Card image cap">
+                <img class="card-img-top" src="{{url_for('static', filename='img/1.jpg')}}" alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title">Card 1</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -27,7 +33,7 @@
         </div>
         <div class="carousel-item">
             <div class="card mx-auto" style="width: 18rem;">
-                <img class="card-img-top" src="../1.jpg" alt="Card image cap">
+                <img class="card-img-top" src="{{url_for('static', filename='img/1.jpg')}}"" alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title">Card 2</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -37,7 +43,7 @@
         </div>
         <div class="carousel-item">
             <div class="card mx-auto" style="width: 18rem;">
-                <img class="card-img-top" src="../1.jpg" alt="Card image cap">
+                <img class="card-img-top" src="{{url_for('static', filename='img/1.jpg')}}"" alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title">Card 3</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
