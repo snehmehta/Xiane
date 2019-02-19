@@ -44,7 +44,7 @@ def handle_message(response):
         if computer == 'general':
             return (computer_text,'text')
         else:
-            return ('E:\\Tech\\speech_t\\templates\\c_quiz.html','iframe')
+            return url_for('static',filename='c_quiz.html')
 
     else:
         return ("I am under Construction",'text')
