@@ -16,38 +16,59 @@
     .carousel-control-next {
         margin-right: -15px;
     }
+    .card {
+        width: 18rem; 
+        height: 22rem;
+    }
+    img {
+        width: 18rem;
+        height: 9rem;
+    }
 </style>
 </head>
 <body>
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="false">
     <div class="carousel-inner">
         <div class="carousel-item active">
-            <div class="card mx-auto" style="width: 18rem;">
-                <img class="card-img-top" src="{{url_for('static', filename='img/1.jpg')}}" alt="Card image cap">
+            <div class="card mx-auto">
+                <img class="card-img-top" src="{{url_for('static', filename='img/c_quest.jpg')}}" alt="Card image cap">
                 <div class="card-body">
-                    <h5 class="card-title">Card 1</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <h5 class="card-title">Information</h5>
+                    <p class="card-text">
+                        Event Type: Individual Event
+                        <br>
+                        Time Duration: 30 To 45 Minute
+                        <br>
+                        <b>Co-ordinator's:</b>
+                        <br>
+                        Faculty: <b>Prof. Rakesh Katariya</b>
+                        <br>
+                        Student: <b>Marvania Deep</b>
+                    </p>
                 </div>
             </div>
         </div>
         <div class="carousel-item">
-            <div class="card mx-auto" style="width: 18rem;">
-                <img class="card-img-top" src="{{url_for('static', filename='img/1.jpg')}}"" alt="Card image cap">
+            <div class="card mx-auto">
+                <img class="card-img-top" src="{{url_for('static', filename='img/c_quest.jpg')}}"" alt="Card image cap">
                 <div class="card-body">
-                    <h5 class="card-title">Card 2</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <h5 class="card-title">Description</h5>
+                    <p class="card-text">
+                        Its all about the mother of all language, C. If you think that your base of coding is strong enough, let’s test it in this event.
+                    </p>
                 </div>
             </div>
         </div>
         <div class="carousel-item">
-            <div class="card mx-auto" style="width: 18rem;">
-                <img class="card-img-top" src="{{url_for('static', filename='img/1.jpg')}}"" alt="Card image cap">
+            <div class="card mx-auto">
+                <img class="card-img-top" src="{{url_for('static', filename='img/c_quest.jpg')}}"" alt="Card image cap">
                 <div class="card-body">
-                    <h5 class="card-title">Card 3</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <h5 class="card-title">Rounds</h5>
+                    <p class="card-text" style="font-size: 12px;">
+                       <b>1st round:</b> A simple quiz on basics of C language. <br>
+                        <b>2nd round:</b> The debugging skills would be test here of those who cleared the first round. <br>
+                        <b>3rd round:</b> In this round, participants would write a program on a given problem statement to generate a proper output
+                    </p>
                 </div>
             </div>
         </div>
