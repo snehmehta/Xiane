@@ -41,16 +41,12 @@ input {
 
 .bot-message {
     padding: 10px;
-    border-top-right-radius: 50px;
-    border-top-left-radius: 50px;
-    border-bottom-right-radius: 50px;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
     background: #333;
     color: white; 
     width: max-content;
-<<<<<<< HEAD
-=======
-    word-wrap: break-word;
->>>>>>> d8165d09ca99ff60133ff5b3850136070e6cc4db
     max-width: 350px;
     clear: both;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -58,9 +54,9 @@ input {
 
 .human-message {
     padding: 10px;
-    border-bottom-left-radius: 50px;
-    border-top-left-radius: 50px;
-    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
     background: #fff;
     color: #333;
     word-wrap: break-word;
