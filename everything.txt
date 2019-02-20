@@ -1,3 +1,5 @@
+Hey I can do following things:
+
 "1" : "I can tell you about information about events"
 "example" : "Tell me about c quiz"
 "2" : "List of events in department"

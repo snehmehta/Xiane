@@ -37,17 +37,23 @@ def handle_message(response):
     if creator:
         return ("BrainChild of Sneh Mehta and Beautify by Nimit Patel",'text')
     elif greeting:
-        return ("Hi, how can I help you",'text')
+        return (everything_text,'text')
     elif everything:
         return (everything_text,'text')
     elif computer:
         if computer == 'general':
             return (computer_text,'text')
-        else:
+        elif computer == 'c quiz':
             return ('c_quiz','iframe')
+        elif computer == 'relay coding':
+            return ('relay_coding','iframe')
+        elif computer == 'web tricks':
+            return ('web_tricks','iframe')
+        elif computer == 'cyber hunt':
+            return ('cyber_hunt','iframe')
 
     else:
-        return ("I am under Construction",'text')
+        return ("I am under Construction, please try later",'text')
 
 
 @app.route('/')
@@ -73,6 +79,18 @@ def get_message():
 @app.route('/c_quiz')
 def c_quiz():
     return render_template('c_quiz.html') 
+
+@app.route('/cyber_hunt')
+def cyber_hunt():
+    return render_template('cyber_hunt.html') 
+
+@app.route('/web_tricks')
+def web_tricks():
+    return render_template('web_tricks.html') 
+
+@app.route('/relay_coding')
+def relay_coding():
+    return render_template('relay_coding.html') 
 
 # run Flask app
 if __name__ == "__main__":
