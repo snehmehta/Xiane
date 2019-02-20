@@ -5,16 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='cards.css')}}">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <style>
     body, html {
         background: transparent;
-    }
-    .carousel-control-prev {
-        margin-left: -15px;
-    }
-    .carousel-control-next {
-        margin-right: -15px;
     }
 </style>
 </head>
@@ -26,10 +21,12 @@
                 <img class="card-img-top" src="{{url_for('static', filename='img/1.jpg')}}" alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title">C-Quiz</h5>
-                    <p class="card-text">Event Type: Individual Event</p>
-                    <p class="card-text">Time Duration: 30 To 45 Minute</p>
-                    <p class="card-text">Faculty Co-ordinator: Prof. Rakesh Katariya</p>
-                    <p class="card-text">Student Co-ordinator: Marvania Deep (8200664747)</p>
+                    <p class="card-text">
+                        Event Type: Individual Event <br>
+                        Co-ordinator: <br>
+                        Faculty: <b> Prof. Rakesh Katariya </b> <br>
+                        Student: <b>Marvania Deep <small>8200664747</small> </b>
+                    </p>
                     <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
                 </div>
             </div>
@@ -40,6 +37,8 @@
                 <div class="card-body">
                     <h5 class="card-title">DESCRIPTION</h5>
                     <p class="card-text">Its all about the mother of all language, C. If you think that your base of coding is strong enough, let’s test it in this event.</p>
+                    <h5 class="card-title">Time Duration:</h5>
+                    <p class="card-text">30 to 40 Minute</p>
                     <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
                 </div>
             </div>
@@ -49,11 +48,11 @@
                 <!-- <img class="card-img-top" src="{{url_for('static', filename='img/1.jpg')}}"" alt="Card image cap"> -->
                 <div class="card-body">
                     <h5 class="card-title">Rounds: 3 rounds</h5>
-                    <p class="card-text">1st round: A simple quiz on basics of C language.</p>
-                    <p class="card-text">2nd round: The debugging skills would be test here of those who cleared the first round. </p>
-                    <p class="card-text">3rd round: After clearing the first and second rounds, its time to test your logic.
-                        In this round, participants would write a program on a given problem statement to generate a proper output.
-                        </p>
+                    <p class="card-text" style="font-size: 16px;"> 
+                        <b>1st round:</b> A simple quiz on basics of C language. <br>
+                        <b>2nd round:</b> The debugging skills would be test here of those who cleared the first round. <br>  
+                        <b>3rd round:</b> In this round, participants would write a program on a given problem statement to generate a proper output.
+                    </p>
                     <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
                 </div>
             </div>
