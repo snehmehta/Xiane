@@ -35,7 +35,7 @@ def handle_message(response):
     computer = first_entity_value(entities,'computer')
 
     if creator:
-        return ("Created by Sneh Mehta and Beautify by Nimit Patel",'text')
+        return ("BrainChild of Sneh Mehta and Beautify by Nimit Patel",'text')
     elif greeting:
         return ("Hi, how can I help you",'text')
     elif everything:
