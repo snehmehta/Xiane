@@ -5,16 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='cards.css')}}">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <style>
     body, html {
         background: transparent;
-    }
-    .carousel-control-prev {
-        margin-left: -15px;
-    }
-    .carousel-control-next {
-        margin-right: -15px;
     }
 </style>
 </head>
@@ -26,32 +21,38 @@
                 <img class="card-img-top" src="{{url_for('static', filename='img/1.jpg')}}" alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title">Cyber Hunt</h5>
-                    <p class="card-text">Event Type: Maximum 2 Members</p>
-                    <p class="card-text">Time Duration: 30 To 45 Minute</p>
-                    <p class="card-text">Faculty Co-ordinator: Prof.  Sunny Bodiwala</p>
-                    <p class="card-text">Student Co-ordinator: Bhakta Raj (9687 58 3858)</p>
+                    <p class="card-text">
+                        Event Type: Maximum 2 Members <br>
+                        Co-ordinator <br>
+                        Faculty: <b>Prof. Sunny Bodiwala</b> <br>
+                        Student: <b>Bhakta Raj <small>9687583858</small> </b>
+                    </p>
                     <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
                 </div>
             </div>
         </div>
         <div class="carousel-item">
             <div class="card mx-auto" style="width: 18rem;">
-                <img class="card-img-top" src="{{url_for('static', filename='img/1.jpg')}}"" alt="Card image cap">
+                <!--<img class="card-img-top" src="{{url_for('static', filename='img/1.jpg')}}"" alt="Card image cap">-->
                 <div class="card-body">
                     <h5 class="card-title">DESCRIPTION</h5>
                     <p class="card-text">Cyber Hunt is a real life skill testing event, which will make you think like a hacker. It will test your Information Gathering and Technical Skills Together. Your Logical problem solving skills will be tested in this event.</p>
+                    <h5 class="card-title">Time Duration:</h5>
+                    <p class="card-text"> 30 To 45 Minute</p>
                     <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
                 </div>
             </div>
         </div>
         <div class="carousel-item">
             <div class="card mx-auto" style="width: 18rem;">
-                <img class="card-img-top" src="{{url_for('static', filename='img/1.jpg')}}"" alt="Card image cap">
+                <!--<img class="card-img-top" src="{{url_for('static', filename='img/1.jpg')}}"" alt="Card image cap">-->
                 <div class="card-body">
                     <h5 class="card-title">Rounds: 3 rounds</h5>
-                    <p class="card-text">1st round: First Round will be based on Information gathering skills</p>
-                    <p class="card-text">2nd round: Second Round will be based on cryptography skills.</p>
-                    <p class="card-text">3rd round: Final round will be based on technical skills for sql injection and web pentesting.</p>
+                    <p class="card-text">
+                        <b>1st round:</b> First Round will be based on Information gathering skills <br>
+                        <b>2nd round:</b> Second Round will be based on cryptography skills. <br>
+                        <b>3rd round:</b> Final round will be based on technical skills for sql injection and web pentesting.
+                    </p>
                     <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
                 </div>
             </div>

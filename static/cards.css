@@ -1,0 +1,23 @@
+.carousel-control-prev {
+    margin-left: -15px;
+}
+.carousel-control-next {
+    margin-right: -15px;
+}
+.card {
+    width: 18rem; 
+    height: 22rem;
+}
+img {
+    width: 18rem;
+    height: 9rem;
+}
+/*  For mobile phones: */
+@media only screen and (max-width: 800px) {
+    .carousel-control-prev {
+        margin-left: -18px;
+    }
+    .carousel-control-next {
+        margin-right: -18px;
+    }
+}

@@ -5,16 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='cards.css')}}">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <style>
     body, html {
         background: transparent;
-    }
-    .carousel-control-prev {
-        margin-left: -15px;
-    }
-    .carousel-control-next {
-        margin-right: -15px;
     }
 </style>
 </head>
@@ -26,41 +21,47 @@
                 <img class="card-img-top" src="{{url_for('static', filename='img/1.jpg')}}" alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title">Web Tricks</h5>
-                    <p class="card-text">Event Type: Individual Event</p>
-                    <p class="card-text">Time Duration: 30 To 45 Minute</p>
-                    <p class="card-text">Faculty Co-ordinator: Prof. Roshni M. Bhandari</p>
-                    <p class="card-text">Student Co-ordinator: Shaikh Jishan (9574358708)                    </p>
+                    <p class="card-text">
+                        Event Type: Individual Event <br>
+                        Co-ordinator <br>
+                        Faculty: <b>Prof. Roshni M. Bhandari</b> <br>
+                        Student: <b>Shaikh Jishan <small>9574358708</small> </b>                    
+                    </p>
                     <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
                 </div>
             </div>
         </div>
         <div class="carousel-item">
             <div class="card mx-auto" style="width: 18rem;">
-                <img class="card-img-top" src="{{url_for('static', filename='img/1.jpg')}}"" alt="Card image cap">
+                <!--<img class="card-img-top" src="{{url_for('static', filename='img/1.jpg')}}"" alt="Card image cap">-->
                 <div class="card-body">
                     <h5 class="card-title">DESCRIPTION</h5>
                     <p class="card-text">
-                        This Designing event mainly focuses upon knowledge of web designing and scripting concepts.</p>
-                    <p>Competition Topics: </p>
-                    <ol>
+                        This Designing event mainly focuses upon knowledge of web designing and scripting concepts. <br>
+                        <b>Competition Topics:</b>
+                    </p>
+                    <ol style="font-size: 10px;">
                         <li>Digital India </li>
                         <li>Swachh Bharat Abhiyan</li>
                         <li>e-Resources in the field of education  </li>
                         <li>e-Commerce Website</li>
                         <li>Festivals in India</li>
-
                     </ol>
+                    <h5 class="card-title">Time Duration:</h5>
+                    <p class="card-text"> 30 To 45 Minute</p>
                     <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
                 </div>
             </div>
         </div>
         <div class="carousel-item">
             <div class="card mx-auto" style="width: 18rem;">
-                <img class="card-img-top" src="{{url_for('static', filename='img/1.jpg')}}"" alt="Card image cap">
+                <!--<img class="card-img-top" src="{{url_for('static', filename='img/1.jpg')}}"" alt="Card image cap">-->
                 <div class="card-body">
                     <h5 class="card-title">Rounds: 2 rounds</h5>
-                    <p class="card-text">1st round: This round will consist of 30 multiple choice questions based on Basic Web Designing  Languages. (Example HTML, CSS, Java Script). Duration for this will be 30 Minutes.</p>
-                    <p class="card-text">2nd round:Shortlisted participants from round 1 will have to design 3+ Static/Dynamic Web pages based on Competition Topics in 2 hour using permitted development tools. </p>
+                    <p class="card-text" style="font-size: 16px;">
+                        <b>1st round:</b> This round will consist of 30 multiple choice questions based on Basic Web Designing  Languages. (Example HTML, CSS, Java Script). Duration for this will be 30 Minutes. <br>
+                        <b>2nd round:</b> Shortlisted participants from round 1 will have to design 3+ Static/Dynamic Web pages based on Competition Topics in 2 hour using permitted development tools. 
+                    </p>
                     <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
                 </div>
             </div>
