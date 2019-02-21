@@ -5,16 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='cards.css')}}">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <style>
     body, html {
         background: transparent;
-    }
-    .carousel-control-prev {
-        margin-left: -15px;
-    }
-    .carousel-control-next {
-        margin-right: -15px;
     }
 </style>
 </head>
@@ -26,11 +21,11 @@
                 <img class="card-img-top" src="{{url_for('static', filename='img/1.jpg')}}" alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title">Relay Coding</h5>
-                    <p class="card-text">Event Type: Team of 2</p>
-                    <p class="card-text">Time Duration: 30 To 45 Minute</p>
-                    <p class="card-text">Faculty Co-ordinator: Mr. Brijesh  A. Bhandari</p>
-                    <p class="card-text">Student Co-ordinator: Patel Rasee (9904716494)
-
+                    <p class="card-text">
+                        Event Type: Team of 2 <br>
+                        Co-ordinator <br>
+                        Faculty: <b>Mr. Brijesh A. Bhandari</b> <br>
+                        Student: <b>Patel Rasee <small>9904716494</small></b>
                     </p>
                     <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
                 </div>
@@ -38,22 +33,26 @@
         </div>
         <div class="carousel-item">
             <div class="card mx-auto" style="width: 18rem;">
-                <img class="card-img-top" src="{{url_for('static', filename='img/1.jpg')}}"" alt="Card image cap">
+                <!--<img class="card-img-top" src="{{url_for('static', filename='img/1.jpg')}}"" alt="Card image cap">-->
                 <div class="card-body">
                     <h5 class="card-title">DESCRIPTION</h5>
                     <p class="card-text">Relay coding looks for the real star team that stands up to the ability of accuracy, speed, co-operation & logic. Come take part in the battle of the geeks who look for the fame of the relay coding team by showcasing in-human coding skills in 3 different rounds.</p>
+                    <h5 class="card-title">Time Duration:</h5>
+                    <p class="card-text"> 30 To 45 Minute</p>
                     <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
                 </div>
             </div>
         </div>
         <div class="carousel-item">
             <div class="card mx-auto" style="width: 18rem;">
-                <img class="card-img-top" src="{{url_for('static', filename='img/1.jpg')}}"" alt="Card image cap">
+                <!--<img class="card-img-top" src="{{url_for('static', filename='img/1.jpg')}}"" alt="Card image cap">-->
                 <div class="card-body">
                     <h5 class="card-title">Rounds: 3 rounds</h5>
-                    <p class="card-text">1st round: Solve the Questionnaire (20 Minutes)</p>
-                    <p class="card-text">2nd round: Blank Screen Coding (20 Minutes)</p>
-                    <p class="card-text">3rd round: On Screen Coding (20 Minutes)</p>
+                    <p class="card-text">
+                        <b>1st round:</b> Solve the Questionnaire (20 Minutes) <br>
+                        <b>2nd round:</b> Blank Screen Coding (20 Minutes) <br>
+                        <b>3rd round:</b> On Screen Coding (20 Minutes)
+                    </p>
                     <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
                 </div>
             </div>
