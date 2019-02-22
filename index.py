@@ -21,6 +21,9 @@ with open("chemical_text.txt",'r') as f:
 with open("mech_text.txt",'r') as f:
     mech_text = f.read()
 
+with open("civil_text.txt",'r') as f:
+    civil_text = f.read()
+
 def first_entity_value(entities, entity):
     if entity not in entities:
         return None 
@@ -80,6 +83,18 @@ def handle_message(response):
         elif chemical == 'chem-o-car':
             return ('chem-o-car','iframe')
         
+    elif civil:
+        if civil == 'general':
+            return ()
+        elif civil == 'sustainable-planning':
+            return ('sustainable-planning','iframe')
+        elif civil == 'sarjan-setu':
+            return ('sarjan-setu','iframe')
+        elif civil == 'civil-quiz':
+            return ('civil-quiz','iframe')
+        elif civil == 'aakruti':
+            return ('aakruti','iframe')
+
     else:
         return ("Sorry I dont get, what you are saying",'text')
 
@@ -130,7 +145,7 @@ def robo_race():
 
 @app.route('/lathe_war')
 def lathe_war():
-    return render_template('robo_race.html') 
+    return render_template('lathe_war.html') 
 
 @app.route('/cad_champs')
 def cad_champs():
@@ -147,6 +162,22 @@ def chem_o_flow():
 @app.route('/chem-o-quiz')
 def chem_o_quiz():
     return render_template('chem-o-quiz.html') 
+
+@app.route('/sustainable-planning')
+def sustainable_planning():
+    return render_template('sustainable-planning.html')
+
+@app.route('/sarjan-setu')
+def sarjan_setu():
+    return render_template('sarjan-setu.html')
+
+@app.route('/civil-quiz')
+def civil_quiz():
+    return render_template('civil-quiz.html') 
+
+@app.route('/aakruti')
+def aakruti():
+    return render_template('aakruti.html') 
 
 # run Flask app
 if __name__ == "__main__":
