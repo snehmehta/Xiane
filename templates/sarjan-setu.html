@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='cards.css')}}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<style>
+    body, html {
+        background: transparent;
+    }
+</style>
+</head>
+<body>
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="false">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <div class="card mx-auto" style="width: 18rem;">
+                <img class="card-img-top" src="{{url_for('static', filename='img/1.jpg')}}" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Sarjan Setu </h5>
+                    <p class="card-text">
+                        Event Type: Group Event (3 persons) <br>
+                        Co-ordinator: <br>
+                        Faculty: <b> Mehul A. Agrawal </b> <br>
+                        Student: <b>Sharma Kartik M <small>8347109702</small> </b>
+                    </p>
+                    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="card mx-auto" style="width: 18rem;">
+                <!-- <img class="card-img-top" src="{{url_for('static', filename='img/1.jpg')}}"" alt="Card image cap"> -->
+                <div class="card-body">
+                    <h5 class="card-title">DESCRIPTION</h5>
+                    <p class="card-text">This is 3-person team event in which they will have to build a tower by using paper, Adhesive material and cello tape, and as per below mention specifications.</p>
+                    <h5 class="card-title">Time Duration:</h5>
+                    <p class="card-text">60 Minutes</p>
+                    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="card mx-auto" style="width: 18rem;">
+                <!-- <img class="card-img-top" src="{{url_for('static', filename='img/1.jpg')}}"" alt="Card image cap"> -->
+                <div class="card-body">
+                    <h5 class="card-title">Rounds: 1 round</h5>
+                    <p class="card-text" style="font-size: 16px;"> 
+                        <b>MATERIAL PROVIDED TO YOU:</b> <br>
+                        Paper,Cello tape,Glue,Scissor <br>
+                        <b>1st round:</b> 
+                        Team has to prepare a model with in a given time and the model should specify the following criteria’s:-
+                        Minimum height: 35cm.
+                        Maximum base dimension should be 20cm x 20cm.  
+                        Overlapping is allowed.
+                        Winning criteria will be considered as per (sustainable against wind load), (maximum height) (aesthetic view) & (questions related structure). 
+                    </p>
+                    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
