@@ -85,7 +85,7 @@ def handle_message(response):
         
     elif civil:
         if civil == 'general':
-            return ()
+            return (civil_text, 'text')
         elif civil == 'sustainable-planning':
             return ('sustainable-planning','iframe')
         elif civil == 'sarjan-setu':
