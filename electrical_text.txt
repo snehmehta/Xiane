@@ -1,0 +1,4 @@
+1: Electrical Analogy
+2: Magnetic Labyrinth
+3: Electrical Quiz
+4: Circuitrix

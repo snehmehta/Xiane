@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='cards.css')}}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<style>
+    body, html {
+        background: transparent;
+    }
+</style>
+</head>
+<body>
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="false">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <div class="card mx-auto" style="width: 18rem;">
+                <img class="card-img-top" src="{{url_for('static', filename='img/1.jpg')}}" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Treasure Hunt</h5>
+                    <p class="card-text">
+                        Event Type: Maximum four members <br>
+                        Co-ordinator: <br>
+                        Faculty: <b> Ms. Zeel Sheth </b> <br>
+                        Student: <b>Shakshi Vaidya <small>97141 56998</small> </b>
+                    </p>
+                    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="card mx-auto" style="width: 18rem;">
+                <!-- <img class="card-img-top" src="{{url_for('static', filename='img/1.jpg')}}"" alt="Card image cap"> -->
+                <div class="card-body">
+                    <h5 class="card-title">DESCRIPTION</h5>
+                    <p class="card-text">A treasure hunt is one of many different types of games with one or more players who try to find hidden objects or places by following a series of clues. </p>
+                    <h5 class="card-title">Time Duration:</h5>
+                    <p class="card-text">60 minutes</p>
+                    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="card mx-auto" style="width: 18rem;">
+                <!-- <img class="card-img-top" src="{{url_for('static', filename='img/1.jpg')}}"" alt="Card image cap"> -->
+                <div class="card-body">
+                    <h5 class="card-title">Rules and Regulations</h5>
+                    <p class="card-text" style="font-size: 16px;"> 
+                        <ol>
+                            <li>Maximum four members are allowed in each team</li>
+                            <li>Mobile & Internet are not allowed during the event.</li>
+                            <li>All team members must remain together throughout the event.</li>
+                            <li>There will be three rounds</li>
+                            <li>The team with least time will be the winner.</li>
+                        </ol>
+                    </p>
+                    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,6 +1,4 @@
 1 : C quiz  
 2 : Relay coding
 3 : Web Tricks
-4 : Counter Strike
-5 : PUBG 
-6 : Cyber Hunt
+4 : Cyber Hunt
