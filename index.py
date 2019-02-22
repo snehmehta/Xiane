@@ -15,8 +15,6 @@ with open("everything.txt",'r') as f:
 with open("computer.txt",'r') as f:
     computer_text = f.read()
 
-with open("c_quiz.txt",'r') as f:
-    c_quiz = f.read()
 
 def first_entity_value(entities, entity):
     if entity not in entities:

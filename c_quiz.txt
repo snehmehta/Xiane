@@ -1,8 +1,0 @@
-Event Type: Individual Event
-Time Duration: 30 To 45 Minute
-Faculty Co-ordinator: Prof. Rakesh Katariya
-Student Co-ordinator: Marvania Deep 
-
-Description :
-Its all about the mother of all language, C. If you think that your base of coding is strong enough, let’s test it in this event.
-
