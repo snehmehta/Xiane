@@ -46,7 +46,7 @@ def handle_message(response):
     
     entities = response['entities']
     greeting = first_entity_value(entities,'intent')
-    creator = first_entity_value(entities,'personality')
+    personality = first_entity_value(entities,'personality')
     everything = first_entity_value(entities,'fest_question')
     computer = first_entity_value(entities,'computer')
     mechanical = first_entity_value(entities,'mechanical')
@@ -58,12 +58,18 @@ def handle_message(response):
     invalid = first_entity_value(entities,'invalid')    
 
 
-    if creator:
-        return ("BrainChild of Sneh Mehta and Beautify by Nimit Patel",'text')
+    if personality:
+        if  personality == 'creator':
+            return ("I am BrainChild of Sneh Mehta and Beautify by Nimit Patel",'text')
+        else:
+            return ("Hello I am Xianze, Your Tech-Fest Assistant",'text')
+
     elif greeting:
         return ('everything','iframe')
+
     elif everything:
         return ('everything','iframe')
+
     elif computer:
         if computer == 'general':
             return (computer_text,'text')
@@ -76,6 +82,8 @@ def handle_message(response):
         elif computer == 'cyber hunt':
             return ('cyber_hunt','iframe')
         
+        
+        
     elif mechanical:
         if mechanical == 'general':
             return (mech_text, 'text')
@@ -86,7 +94,7 @@ def handle_message(response):
         elif mechanical == 'cad champs':
             return ('cad_champs','iframe')
         elif mechanical == 'mech quiz':
-            return ('mech_quizs','iframe')
+            return ('mech_quiz','iframe')
 
     elif chemical:
         if chemical == 'general':
@@ -101,6 +109,8 @@ def handle_message(response):
     elif civil:
         if civil == 'general':
             return (civil_text, 'text')
+        elif civil == 'aakruti place':
+            return ('hello i m genius sneh mehta','text')
         elif civil == 'sustainable planning':
             return ('sustainable_planning','iframe')
         elif civil == 'sarjan setu':
@@ -252,6 +262,12 @@ def magnetic_labyrinth():
 @app.route('/electrical_quiz')
 def electrical_quiz():
     return render_template('electrical_quiz.html') 
+
+
+@app.route('/circuitrix')
+def circuitrix():
+    return render_template('circuitrix.html') 
+
 
 @app.route('/poster_presentation')
 def poster_presentation():
